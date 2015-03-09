@@ -1,0 +1,21 @@
+{
+  "name": "angular-email-application",
+  "version": "0.0.0",
+  "homepage": "https://github.com/deepaksisodiya/angular-email-application",
+  "authors": [
+    "Deepak <deepak.sisodiya@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.3.14",
+    "angular-ui-router": "~0.2.13",
+    "angular-sanitize": "~1.3.14"
+  }
+}
