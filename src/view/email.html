@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-
-</body>
-</html>
+<div style="border: 1px solid black">
+    From : {{ data.email.from }} <br>
+    Date : {{ data.email.date | date : 'dd/mm/yyyy' }} <br>
+    Content : <span ng-bind-html="data.email.content"></span>
+</div>

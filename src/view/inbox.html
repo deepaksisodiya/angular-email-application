@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<h2>Inbox</h2>
+<p>{{ meta.title }}</p>
 
-</body>
-</html>
+<p>You have {{ data.emails.length || "no "}} emails</p>
+
+        <div ng-repeat="email in data.emails">
+
+            <div style="border: 1px solid black">
+                From : {{ email.from }} <br>
+                Date : {{ email.date | date : 'dd/mm/yyyy' }} <br>
+                Subject : {{ email.subject }} <br>
+                <a href="" ng-click="goToMessage(email.id)">Read</a>
+                <a href="" ng-click="deleteMessage(email.id, $index)">Delete</a>
+            </div>
+
+
+        </div>
+
+<pre>{{ data.emails | json }}</pre>
