@@ -8,7 +8,7 @@ app.factory('emailFactory', ['$http', '$stateParams', function($http, $statePara
   exports.getMessages = function() {
   console.log($stateParams.id);
   if($stateParams.id) {
-    return $http.get('/json/emails/' + $stateParams.id + '.json');
+    return $http.get('./../../json/emails/' + $stateParams.id + '.json');
   }
   };
   return exports;
