@@ -6,7 +6,7 @@ app.factory('inboxFactory', ['$http', '$location', function($http, $location) {
   "use strict";
   var exports = {};
   exports.getMessages = function() {
-    return $http.get('./../json/emails.json');
+    return $http.get('./json/emails.json');
   };
 
   exports.deleteMessage = function(id, index, $scope) {
